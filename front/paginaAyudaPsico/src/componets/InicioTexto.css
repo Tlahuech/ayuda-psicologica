@@ -1,0 +1,19 @@
+.wrapperTexto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+    padding: 20px 80px;
+    box-sizing: border-box;
+}
+
+.wrapperTexto img {
+    width: 400px;
+}
+
+
+.wrapperTexto p {
+    text-align: left;
+    font-family: arial;
+}

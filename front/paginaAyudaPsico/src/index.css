@@ -1,0 +1,16 @@
+/* Asegura que la página completa no tenga márgenes blancos y mida el 100% */
+html, body, #root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links {
+  display: flex;         /* Pone los elementos en fila */
+  justify-content: flex-end; /* Empuja el contenido al final (derecha) */
+  list-style: none;      /* Quita los puntos de la lista */
+  gap: 20px;             /* Espacio entre cada enlace */
+  padding: 0;
+  margin: 0;
+}
