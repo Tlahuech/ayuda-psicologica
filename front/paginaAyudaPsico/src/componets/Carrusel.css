@@ -1,13 +1,39 @@
-.wrapperBody {
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
+.carrusel-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
-
-.whrapper  {
-    text-align: center;
+.carrusel-inner {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
 }
 
+.carrusel-imagen {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+}
 
+.carrusel-puntos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.punto {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+}
+
+.punto.activo {
+    background-color: #555;
+}

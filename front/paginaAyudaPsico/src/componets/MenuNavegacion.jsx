@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import Logo from "../images/logo.png";
 import { Link } from "react-router-dom";
 
 function MenuNavegacion() {
+
+        const [menuAbierto, setMenuAbierto] = useState(false);
     return (
 
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -22,10 +24,9 @@ function MenuNavegacion() {
                 <button
                     className="navbar-toggler"
                     type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#menuPrincipal"
+                    onClick={() => setMenuAbierto(!menuAbierto)}
                     aria-controls="menuPrincipal"
-                    aria-expanded="false"
+                    aria-expanded={menuAbierto}
                     aria-label="Toggle navigation"
                 >
                     <span className="navbar-toggler-icon"></span>
@@ -33,8 +34,8 @@ function MenuNavegacion() {
 
 
                 {/* MENÚ */}
-                <div
-                    className="collapse navbar-collapse"
+               <div
+                    className={`collapse navbar-collapse ${menuAbierto ? "show" : ""}`}
                     id="menuPrincipal"
                 >
 
@@ -44,6 +45,7 @@ function MenuNavegacion() {
                             <Link
                                 className="nav-link"
                                 to="/inicio"
+                                onClick={() => setMenuAbierto(false)}
                             >
                                 INICIO
                             </Link>
@@ -51,9 +53,10 @@ function MenuNavegacion() {
 
 
                         <li className="nav-item">
-                            <Link
+                           <Link
                                 className="nav-link"
                                 to="/ayuda"
+                                onClick={() => setMenuAbierto(false)}
                             >
                                 AYUDA
                             </Link>
@@ -61,9 +64,10 @@ function MenuNavegacion() {
 
 
                         <li className="nav-item">
-                            <Link
+                           <Link
                                 className="nav-link"
                                 to="/contacto"
+                                onClick={() => setMenuAbierto(false)}
                             >
                                 CONTACTO
                             </Link>

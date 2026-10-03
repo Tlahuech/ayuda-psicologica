@@ -26,7 +26,6 @@ function Carrusel() {
                     src={imagenes[indiceActual]} 
                     alt={`Slide ${indiceActual}`} 
                     className="carrusel-imagen"
-                    style={{ width: "900px" , height: "600px"}}
                 />
             </div>
             
