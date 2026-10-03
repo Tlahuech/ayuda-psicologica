@@ -7,8 +7,10 @@ function Inicio() {
     return (
         <div className="wrapperInicio">
             <div className="inicio-titulo" style={{ textAlign: "center", marginBottom: "100px" }}>
-                <h1>Bienvenido a MenteSer</h1>
-                <p>Un espacio dedicado a brindar apoyo y conectar con quienes más lo necesitan.</p>
+                <h1>Bienvenido a <i>MenteSer</i>.</h1>
+                <br>
+                </br>
+                <p><em>Un espacio dedicado a brindar apoyo y conectar con quienes más lo necesitan.</em></p>
             </div>
             
             {/* El carrusel se encarga de su propia visualización */}
